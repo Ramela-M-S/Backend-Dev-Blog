@@ -140,7 +140,7 @@ Below is the complete list of API endpoints available in the application, catego
 
 ![Profile Page](static/screenshots/User_Profile_Page.png)
 <br>
-<hr>
+
 
 ---
 
@@ -148,7 +148,7 @@ Below is the complete list of API endpoints available in the application, catego
 
 ![Register Page](static/screenshots/Register_Page.png)
 <br>
-<hr>
+
 
 ---
 
@@ -156,7 +156,7 @@ Below is the complete list of API endpoints available in the application, catego
 
 ![Login Page](static/screenshots/Login_Page.png)
 <br>
-<hr>
+
 
 ---
 
@@ -167,7 +167,7 @@ Below is the complete list of API endpoints available in the application, catego
 ![Reset Password Page](static/screenshots/Reset_Password_Page.png)  
 
 <br>
-<hr>
+
 
 ---
 
@@ -175,7 +175,7 @@ Below is the complete list of API endpoints available in the application, catego
 
 ![Email Page](static/screenshots/Mail_Page.png)  
 <br>
-<hr>
+
 
 ---
 
