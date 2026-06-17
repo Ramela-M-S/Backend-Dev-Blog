@@ -75,6 +75,16 @@
                         <!-- Navbar Right Side -->
                        <!-- Navbar Right Side -->
                         <div class="navbar-nav">
+                            <form class="d-flex me-3" id="globalSearchForm">
+                                <input class="form-control me-2"
+                                       type="search"
+                                       placeholder="Search posts..."
+                                       id="globalSearchInput">
+
+                                <button class="btn btn-outline-light" type="submit">
+                                    Search
+                                </button>
+                            </form>
                             <!-- Shown when logged in (hidden by default, shown via JS) -->
                             <div id="loggedInNav" class="d-none">
                                 <button class="btn btn-outline-light mb-2 mb-md-0 me-md-2"
@@ -310,8 +320,6 @@
 
             try {
                 // POST to our API as JSON
-
-
                 const response = await fetch("/api/posts", {
                     method: "POST",
                     headers: {
@@ -361,6 +369,17 @@
             }
             });
         </script>
+        <script>
+        const searchForm = document.getElementById("globalSearchForm");
+
+        searchForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const value = document.getElementById("globalSearchInput").value;
+
+            window.location.href = `/api/post?search=${encodeURIComponent(value)}`;
+        });
+</script>
         {% block scripts %}
         {% endblock scripts %}
     </body>

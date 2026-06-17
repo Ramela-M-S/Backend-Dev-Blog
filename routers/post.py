@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Query
+from sqlalchemy import or_
 from main import *
 from routers.users import get_current_user
 from auth import CurrentUser
@@ -227,3 +228,26 @@ def get_posts(
     has_more = skip + len(posts) < total
 
     return {"posts": posts, "has_more": has_more}
+
+@app.get("/api/post")
+def get_posts(request: Request, search: str, db: db_dependency, skip:int = Query(0,ge = 0) ,
+    limit:int = Query(10,ge=0,le=100) ):
+    query = db.query(Posts)
+    if search:
+        query = query.filter(or_(
+            Posts.title.ilike(f"%{search}%"),
+            Posts.content.ilike(f"%{search}%")
+        ))
+    total = query.count()
+    posts = query.offset(skip).limit(limit).all()
+
+    return templates.TemplateResponse(
+        request= request,
+        name = "home.html",
+        context = {
+            "posts": posts,
+            "has_more": skip + limit < total,
+            "search": search
+        }
+
+    )

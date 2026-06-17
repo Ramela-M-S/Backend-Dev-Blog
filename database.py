@@ -1,10 +1,16 @@
+
+from sqlalchemy.orm import declarative_base
+import os
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:ramelams07@localhost:5432/blog_db"
-
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL is not set in environment variables")
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL
+    DATABASE_URL,
+    pool_pre_ping=True,
+    connect_args={"sslmode": "require"}
 )
 SessionLocal = sessionmaker(
     autocommit = False,
