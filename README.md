@@ -129,7 +129,8 @@ Below is the complete list of API endpoints available in the application, catego
 ### Home Pages
 
 ![Home Page](static/screenshots/Home_Page.png)  
-![User's Home Page](static/screenshots/User_Home_Page.png)
+<br>
+<hr>
 
 ---
 
@@ -138,18 +139,24 @@ Below is the complete list of API endpoints available in the application, catego
 ![User's Home Page](static/screenshots/User_Home_Page.png)
 
 ![Profile Page](static/screenshots/User_Profile_Page.png)
+<br>
+<hr>
 
 ---
 
 ### Register Page
 
 ![Register Page](static/screenshots/Register_Page.png)
+<br>
+<hr>
 
 ---
 
 ### Login Page
 
 ![Login Page](static/screenshots/Login_Page.png)
+<br>
+<hr>
 
 ---
 
@@ -159,12 +166,16 @@ Below is the complete list of API endpoints available in the application, catego
 ![Forgot Password Page](static/screenshots/Forgot_Password_Page.png)  
 ![Reset Password Page](static/screenshots/Reset_Password_Page.png)  
 
+<br>
+<hr>
 
 ---
 
 ### MailTrap Mail Page
 
 ![Email Page](static/screenshots/Mail_Page.png)  
+<br>
+<hr>
 
 ---
 
