@@ -78,35 +78,50 @@ The system is designed with clean architecture principles and scalable backend p
 - Static and media file handling
 - Image processing utilities
 
-
 ---
 
 ## 🔌 API Endpoints
 
-### 🔐 Authentication
-- POST `/api/auth/login`
-- POST `/api/auth/forgot-password`
-- POST `/api/auth/reset-password`
-- PATCH `/api/auth/change-password`
+Below is the complete list of API endpoints available in the application, categorized by their Swagger UI tags. Endpoints marked with 🔒 require an active JWT authorization token.
 
----
+### 👥 Users
+- **GET** `/api/posts` - Get Posts
+- **POST** `/api/users` - Create User
+- **GET** `/api/users/{user_id}` - Get User
+- **PATCH** `/api/users/{user_id}` - Update User 🔒
+- **DELETE** `/api/users/{user_id}` - Delete User 🔒
+- **GET** `/api/users/{user_id}/posts` - Get User Posts
 
 ### 📝 Posts
-- GET `/api/posts`
-  - Supports:
-    - `search` → filter posts
-    - `skip` → pagination offset
-    - `limit` → number of posts
-- POST `/api/posts`
+- **POST** `/api/posts` - Create Post 🔒
+- **GET** `/api/post/{post_id}` - Get Post
+- **PUT** `/api/posts/{post_id}` - Update Post Full 🔒
+- **PATCH** `/api/posts/{post_id}` - Update Post Partial 🔒
+- **DELETE** `/api/posts/{post_id}` - Delete Post 🔒
+- **GET** `/api/post` - Get Posts
+
+### 🖼️ Profile
+- **GET** `/api/me` - Me 🔒
+- **PATCH** `/api/{user_id}/picture` - Upload Profile Picture 🔒
+- **DELETE** `/api/{user_id}/picture` - Delete User Picture 🔒
+
+### 🔐 Auth
+- **POST** `/api/auth/login` - Login For Access Token
+- **POST** `/api/auth/forgot-password` - Forgot Password
+- **POST** `/api/auth/reset-password` - Reset Password
+- **PATCH** `/api/auth/change-password` - Change Password 🔒
 
 ---
 
-### 👤 Users
-- POST `/api/users`
-- GET `/api/users/{id}`
+## 📸 Swagger API Documentation
+
+*(Make sure the image files `Swaager_docs_page1.png` and `Swaager_docs_page2.png` are in the same directory as this README file for them to display properly).*
+
+![Swagger UI Page 1](Swaager_docs_page1.png)
+
+![Swagger UI Page 2](Swaager_docs_page2.png)
 
 ---
-
 
 ## ▶️ Run Locally
 
