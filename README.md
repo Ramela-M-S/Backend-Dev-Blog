@@ -125,7 +125,6 @@ Below is the complete list of API endpoints available in the application, catego
 
 ## 📸 Screenshots
 
-All screenshots are stored in: `static/screenshots/`
 
 ### Home Pages
 
@@ -135,6 +134,8 @@ All screenshots are stored in: `static/screenshots/`
 ---
 
 ### User's Pages
+
+![User's Home Page](static/screenshots/User_Home_Page.png)
 
 ![Profile Page](static/screenshots/User_Profile_Page.png)
 
@@ -164,6 +165,7 @@ All screenshots are stored in: `static/screenshots/`
 ### MailTrap Mail Page
 
 ![Email Page](static/screenshots/Mail_Page.png)  
+
 ---
 
 ## ▶️ Run Locally
