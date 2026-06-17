@@ -4,7 +4,7 @@ A full-stack blog platform built using **FastAPI, PostgreSQL, and SQLAlchemy**, 
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 The **Backend Dev Blog** is a modern web application that allows users to create, view, and manage blog posts with secure authentication and a responsive UI. It includes features like JWT login, password reset via email, search functionality, and efficient pagination.
 
@@ -117,9 +117,9 @@ Below is the complete list of API endpoints available in the application, catego
 
 *(Make sure the image files `Swaager_docs_page1.png` and `Swaager_docs_page2.png` are in the same directory as this README file for them to display properly).*
 
-![Swagger UI Page 1](Swaager_docs_page1.png)
+![Swagger UI Page 1](Screenshots/Swaager_docs_page1.png)
 
-![Swagger UI Page 2](Swaager_docs_page2.png)
+![Swagger UI Page 2](Screenshots/Swaager_docs_page2.png)
 
 ---
 
