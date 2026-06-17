@@ -117,10 +117,53 @@ Below is the complete list of API endpoints available in the application, catego
 
 *(Make sure the image files `Swaager_docs_page1.png` and `Swaager_docs_page2.png` are in the same directory as this README file for them to display properly).*
 
-![Swagger UI Page 1](Screenshots/Swaager_docs_page1.png)
+![Swagger UI Page 1](static/screenshots/Swaager_docs_page1.png)
 
-![Swagger UI Page 2](Screenshots/Swaager_docs_page2.png)
+![Swagger UI Page 2](static/screenshots/Swaager_docs_page2.png)
 
+---
+
+## 📸 Screenshots
+
+All screenshots are stored in: `static/screenshots/`
+
+### Home Pages
+
+![Home Page](static/screenshots/Home_Page.png)  
+![User's Home Page](static/screenshots/User_Home_Page.png)
+
+---
+
+### User's Pages
+
+![Profile Page](static/screenshots/User_Profile_Page.png)
+
+---
+
+### Register Page
+
+![Register Page](static/screenshots/Register_Page.png)
+
+---
+
+### Login Page
+
+![Login Page](static/screenshots/Login_Page.png)
+
+---
+
+
+### Password Recovery Pages
+
+![Forgot Password Page](static/screenshots/Forgot_Password_Page.png)  
+![Reset Password Page](static/screenshots/Reset_Password_Page.png)  
+
+
+---
+
+### MailTrap Mail Page
+
+![Email Page](static/screenshots/Mail_Page.png)  
 ---
 
 ## ▶️ Run Locally
