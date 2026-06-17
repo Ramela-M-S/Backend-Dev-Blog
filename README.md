@@ -115,7 +115,7 @@ Below is the complete list of API endpoints available in the application, catego
 
 ## 📸 Swagger API Documentation
 
-*(Make sure the image files `Swaager_docs_page1.png` and `Swaager_docs_page2.png` are in the same directory as this README file for them to display properly).*
+
 
 ![Swagger UI Page 1](static/screenshots/Swaager_docs_page1.png)
 
