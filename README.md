@@ -23,16 +23,15 @@ The system is designed with clean architecture principles and scalable backend p
 
 ### Backend
 - FastAPI (Python Web Framework)
+- CORS Middleware Integration
 
 ### Database
-- PostgreSQL
+- MySQL
 - SQLAlchemy ORM
 
 ### Authentication
 - JWT (JSON Web Tokens)
 - OAuth2 Password Flow
-
----
 
 ## ✨ Features
 
